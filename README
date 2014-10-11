@@ -1,0 +1,41 @@
+This is the M100Empty project for AT&T hackathons. 
+
+--------
+
+To develop with android you need to install adt:
+
+    http://developer.android.com/sdk/installing/installing-adt.html
+
+-------
+
+Next, to develop for the M100 specifically, you need to add a vendor ID to:
+
+.android/adb_usb.ini (if you have ADT installed the .android folder should be
+hidden in your home directory)
+
+If this file does not exist please create it.
+
+Add the following line to the file:
+
+0x1BAE 
+
+There should be no empty lines before 0x1BAE, and exactly one empty line 
+following it.
+
+If you have started ADB, type in the command line/terminal: adb kill-server
+
+If ADB does not work at this point, delete the white space and try again.
+
+-------
+
+On downloading the repo, if you are getting errors in your values/style.xml 
+files, do the following:
+
+    Right click on the project, select Properties
+    Select Android
+    In the Library section at the bottom, click Add....
+    Select android-support-v7-appcompat in the dialog.
+    Click Apply.
+    Click OK.
+    Do a clean build on the project.
+

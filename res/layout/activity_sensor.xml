@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/gyro_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/gyro_sensor" />
+
+    <TextView
+        android:id="@+id/rotate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gyro_label"
+        android:layout_below="@+id/gyro_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/rotate_sensor" />
+
+    <TextView
+        android:id="@+id/accel_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rotate_label"
+        android:layout_below="@+id/rotate_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/accel_sensor" />
+    
+    <TextView
+        android:id="@+id/orient_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/accel_label"
+        android:layout_below="@+id/accel_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/orient_sensor" />
+    
+    <TextView
+        android:id="@+id/grav_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/orient_label"
+        android:layout_below="@+id/orient_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/grav_sensor" />
+
+    <TextView
+        android:id="@+id/gyro_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gyro_label"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/gyro_label"
+        android:text="@string/x" />
+
+    <TextView
+        android:id="@+id/rotate_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rotate_label"
+        android:layout_alignBottom="@+id/rotate_label"
+        android:layout_alignLeft="@+id/gyro_x"
+        android:text="@string/x" />
+
+    <TextView
+        android:id="@+id/accel_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orient_label"
+        android:layout_alignLeft="@+id/rotate_x"
+        android:text="@string/x" />
+
+    <TextView
+        android:id="@+id/orient_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grav_label"
+        android:layout_alignLeft="@+id/accel_x"
+        android:text="@string/x" />
+
+    <TextView
+        android:id="@+id/grav_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grav_label"
+        android:layout_alignBottom="@+id/grav_label"
+        android:layout_alignLeft="@+id/orient_x"
+        android:text="@string/x" />
+
+    <TextView
+        android:id="@+id/rotate_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rotate_x"
+        android:layout_alignBottom="@+id/rotate_x"
+        android:layout_alignLeft="@+id/gyro_y"
+        android:text="@string/y" />
+
+    <TextView
+        android:id="@+id/accel_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accel_x"
+        android:layout_alignBottom="@+id/accel_x"
+        android:layout_alignLeft="@+id/rotate_y"
+        android:text="@string/y" />
+
+    <TextView
+        android:id="@+id/orient_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grav_label"
+        android:layout_alignLeft="@+id/accel_y"
+        android:text="@string/y" />
+
+    <TextView
+        android:id="@+id/grav_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grav_x"
+        android:layout_alignBottom="@+id/grav_x"
+        android:layout_alignLeft="@+id/orient_y"
+        android:text="@string/y" />
+
+    <TextView
+        android:id="@+id/gyro_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gyro_x"
+        android:layout_alignBottom="@+id/gyro_x"
+        android:layout_marginLeft="140dp"
+        android:layout_toRightOf="@+id/gyro_label"
+        android:text="@string/y" />
+
+    <TextView
+        android:id="@+id/rotate_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accel_label"
+        android:layout_alignLeft="@+id/gyro_z"
+        android:text="@string/z" />
+
+    <TextView
+        android:id="@+id/accel_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accel_y"
+        android:layout_alignBottom="@+id/accel_y"
+        android:layout_alignLeft="@+id/rotate_z"
+        android:text="@string/z" />
+
+    <TextView
+        android:id="@+id/orient_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orient_y"
+        android:layout_alignBottom="@+id/orient_y"
+        android:layout_alignLeft="@+id/accel_z"
+        android:text="@string/z" />
+
+    <TextView
+        android:id="@+id/grav_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grav_y"
+        android:layout_alignBottom="@+id/grav_y"
+        android:layout_alignLeft="@+id/orient_z"
+        android:text="@string/z" />
+
+    <TextView
+        android:id="@+id/gyro_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rotate_label"
+        android:layout_marginLeft="220dp"
+        android:layout_toRightOf="@+id/gyro_label"
+        android:text="@string/z" />
+
+    <TextView
+        android:id="@+id/gyro_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gyro_z"
+        android:layout_alignBottom="@+id/gyro_z"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56dp"
+        android:text="@string/gyro_unit" />
+
+    <TextView
+        android:id="@+id/rotate_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accel_label"
+        android:layout_alignLeft="@+id/gyro_unit"
+        android:text="@string/rotate_unit" />
+
+    <TextView
+        android:id="@+id/accel_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accel_z"
+        android:layout_alignBottom="@+id/accel_z"
+        android:layout_alignLeft="@+id/rotate_unit"
+        android:text="@string/accel_unit" />
+
+    <TextView
+        android:id="@+id/orient_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grav_label"
+        android:layout_alignLeft="@+id/accel_unit"
+        android:text="@string/orient_unit" />
+
+    <TextView
+        android:id="@+id/grav_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grav_z"
+        android:layout_alignBottom="@+id/grav_z"
+        android:layout_alignLeft="@+id/orient_unit"
+        android:text="@string/grav_unit" />
+
+</RelativeLayout>

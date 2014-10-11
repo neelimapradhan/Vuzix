@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/InfoText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/sample_dev"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/camera_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sensor_butt"
+        android:layout_marginRight="69dp"
+        android:layout_marginTop="26dp"
+        android:onClick="goCamera"
+        android:text="@string/camera_butt" />
+
+    <Button
+        android:id="@+id/sensor_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/camera_butt"
+        android:layout_below="@+id/InfoText1"
+        android:layout_marginTop="22dp"
+        android:onClick="goSensor"
+        android:text="@string/sensor_butt" />
+
+    <Button
+        android:id="@+id/key_press_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sensor_butt"
+        android:layout_marginLeft="66dp"
+        android:onClick="goKeyPress"
+        android:text="@string/key_press_butt" />
+
+    <Button
+        android:id="@+id/voice_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera_butt"
+        android:layout_alignRight="@+id/key_press_butt"
+        android:layout_marginRight="22dp"
+        android:onClick="goVoice" 
+        android:text="@string/voice_butt" />
+
+</RelativeLayout>

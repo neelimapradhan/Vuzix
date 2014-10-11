@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+
+    <!-- titles of activiies -->
+    <string name="app_name">M100Empty</string>
+    <string name="title_activity_button_press">ButtonPressActivity</string>
+    <string name="title_activity_camera">MainActivity</string>
+    <string name="title_activity_sensor">SensorActivity</string>
+
+    <!-- main actvity -->
+    <string name="sample_dev">M100 Sample Development</string>
+    <string name="key_press_butt">Key Presses</string>
+    <string name="camera_butt">Camera</string>
+    <string name="voice_butt">Voice</string>
+    <string name="go_home">Home</string>
+    <string name="sensor_butt">Sensors</string>
+    
+
+    <!-- created strings for button press activity -->
+    <string name="how_button_dev">Button Press Sample</string>
+    <string name="button_press">Button pressed:</string>
+    <string name="key_press">Key ID:</string>
+    <string name="next_pressed">Next Button</string>
+    <string name="prev_pressed">Previous Button</string>
+    <string name="press_please">-push buttons-</string>
+
+    <!-- created strings for sensor activity -->
+    <string name="sensor_list">Sensor list:</string>
+    <string name="gyro_sensor">Gyroscope:</string>
+    <string name="rotate_sensor">Rotation:</string>
+    <string name="grav_sensor">Gravity:</string>
+    <string name="accel_sensor">Acceleration:</string>
+    <string name="orient_sensor">Orientation:</string>
+    <string name="x">X:</string>
+    <string name="y">Y:</string>
+    <string name="z">Z:</string>
+    <string name="gyro_unit">rad/s</string>
+    <string name="rotate_unit">no units</string>
+    <string name="grav_unit">m/s<sup><small>2</small></sup></string>
+    <string name="accel_unit">m/s<sup><small>2</small></sup></string>
+    <string name="orient_unit">degrees</string>
+
+    <!-- created strings for camera activity -->
+    <string name="save_butt">Save Photo</string>
+    <string name="take_photo_butt">Take Photo</string>
+    <string name="file_name">File:</string>
+    <string name="title_activity_voice">VoiceActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
